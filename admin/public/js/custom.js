@@ -47,9 +47,7 @@ function getServiceData(){
   		$('#loaderDiv').addClass('d-none');
         $('#WrongDiv').removeClass('d-none');
   	}
-	//  data-toggle='modal'
-	//   data-target='#deleteModal'
-
+	
 }).catch(function (error) {
 	
   $('#loaderDiv').addClass('d-none');
