@@ -20,7 +20,7 @@ function getServiceData(){
 	      "<td>" + dataJSON[i].service_des +"</td>"+
 	      "<td>" + dataJSON[i].service_img +"</td>"+
 	      "<td><a href=''><i class='fas fa-edit'></i></a></td>"+
-	      "<td><a href=''><i class='fas fa-trash-alt'></i></a></td>"
+	      "<td><a data-toggle='modal' data-target='#deleteModal'><i class='fas fa-trash-alt'></i></a></td>"
 	      ).appendTo('#servicetable');
 	   });
   	}else{

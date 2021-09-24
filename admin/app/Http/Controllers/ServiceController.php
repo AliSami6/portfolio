@@ -24,6 +24,11 @@ class ServiceController extends Controller
         return $result; 
     }
 
+     public function ServiceDelete(){
+       // $result=json_encode(Service::orderBy('id','desc')->get());
+        return "text"; 
+    }
+
 
     /**
      * Show the form for creating a new resource.
