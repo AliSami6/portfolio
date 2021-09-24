@@ -57,15 +57,22 @@
     <div class="modal-content">
       <div class="modal-body p-5 text-center">
         <h6>Do You want to delete?</h6>
+       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Cancel</button>
-        <button  id="serviceAddConfirmBtn" type="button" class="btn  btn-sm  btn-danger">Save</button>
+        <button type="button" class="btn btn-sm btn-primary" 
+            data-dismiss="modal">No
+        </button>
+
+         <button  type="button" class="btn  btn-sm  btn-danger"
+              data-id="+dataJSON[i].id+" id="serviceDeleteConfirmBtn">Yes
+         </button>
+       
       </div>
     </div>
   </div>
 </div>
-
+<!--data-id="+dataJSON[i].id+" id="serviceDeleteConfirmBtn" --->
 
 @endsection
 
