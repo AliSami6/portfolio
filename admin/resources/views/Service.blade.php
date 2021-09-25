@@ -24,8 +24,6 @@
   </div>
 </div>
 
-
-
 <div id="loaderDiv" class="container">
   <div class="row">
     <div class="col-md-12 text-center p-5">
@@ -34,8 +32,6 @@
   </div>
 </div>
 
-
-
 <div id="WrongDiv" class="container d-none">
   <div class="row">
     <div class="col-md-12 text-center p-5">
@@ -43,13 +39,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
 
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
@@ -65,14 +54,13 @@
         </button>
 
          <button  type="button" class="btn  btn-sm  btn-danger"
-              data-id="+dataJSON[i].id+" id="serviceDeleteConfirmBtn">Yes
+            data-id="+dataJSON[i].id+" id="serviceDeleteConfirmBtn" >Yes
          </button>
        
       </div>
     </div>
   </div>
 </div>
-<!--data-id="+dataJSON[i].id+" id="serviceDeleteConfirmBtn" --->
 
 @endsection
 

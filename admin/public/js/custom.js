@@ -15,29 +15,27 @@ function getServiceData(){
   		var dataJSON=response.data;
 	    console.log(dataJSON)
 	    $.each(dataJSON, function(i, item) {
-	    $('<tr>').html(
-	      "<td>" + dataJSON[i].service_name +"</td>"+
-	      "<td>" + dataJSON[i].service_des +"</td>"+
-	      "<td>" + dataJSON[i].service_img +"</td>"+
-	      "<td><a href=''><i class='fas fa-edit'></i></a></td>"+
-	      "<td><a  class='serviceDeleteBtn' data-id="+dataJSON[i].id+"><i class='fas fa-trash-alt'></i></a></td>"
-	      ).appendTo('#servicetable');
+	    	$('<tr>').html(
+	    	  "<td>" + dataJSON[i].service_name +"</td>"+
+	    	  "<td>" + dataJSON[i].service_des +"</td>"+
+	    	  "<td>" + dataJSON[i].service_img +"</td>"+
+	    	  "<td><a href=''><i class='fas fa-edit'></i></a></td>"+
+	    	  "<td><a  class='serviceDeleteBtn' data-id="+dataJSON[i].id+"><i class='fas fa-trash-alt'></i></a></td>"
+	    	  ).appendTo('#servicetable');
 	  	});
 
 	  	  // Services Table Delete Icon Click
-        $('.serviceDeleteBtn').click(function() {
-               	var id = $(this).data('id');
-
+        $('.serviceDeleteBtn').click(function(){
+               	var id=$(this).data('id');
                 $('#serviceDeleteConfirmBtn').attr('data-id',id);
                 $('#deleteModal').modal('show');
-
         })
 
 
 		// Services Delete Modal Yes Btn
- 		$('#serviceDeleteConfirmBtn').click(function() {
-		    var id = $(this).data('id');
-		        ServiceDelete(id);
+ 		$('#serviceDeleteConfirmBtn').click(function(){
+		    var id=$(this).data('id');
+		        getServiceDelete(id);
 		})
 
 
@@ -56,27 +54,14 @@ function getServiceData(){
 
 }
 
-function ServiceDelete(deleteID) {
- 
- 
-    axios.post('/ServiceDelete', {
-            id: deleteID
-        })
-        .then(function(response) {
-           
-
-            	if (response.data == 1) {
-            	 
-            	    alert('Delete Success');
-            	   
-            	}else {
-            	   
-            	    alert('Delete Fail');
-            	   
+function getServiceDelete(deleteID){
+    axios.post('/ServiceDelete',{id:deleteID})
+        .then(function(response){
+            	if(response.data==1) {
+            	    alert('Delete Success'); 
+            	}else{   
+            	    alert('Delete Fail');   
             	}
-
-          
-
         })
         .catch(function(error) {
           

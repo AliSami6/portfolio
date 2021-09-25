@@ -20,13 +20,28 @@ class ServiceController extends Controller
 
 
     public function getServiceData(){
-        $result=json_encode(Service::orderBy('id','desc')->get());
+        $result=json_encode(Service::all());
         return $result; 
     }
 
-     public function ServiceDelete(){
+    /* public function ServiceDelete(){
        // $result=json_encode(Service::orderBy('id','desc')->get());
         return "text"; 
+    }
+
+*/
+
+
+    public function ServiceDelete(Request $req){
+         $id=$req->input('id');
+         $result=Service::where('id','=',$id)->delete();
+    
+         if($result==true){      
+           return 1;
+         }
+         else{
+            return 0;
+         }
     }
 
 
