@@ -18,9 +18,12 @@ Route::get('/',[HomeController::class,'index']);
 
 Route::get('/visitor',[VisitorController::class,'index'])->name('visitor');
 
+// Admin Panel Service Manage
 Route::get('/service',[ServiceController::class,'index'])->name('service');
-
-
 Route::post('/getServiceData',[ServiceController::class,'getServiceData'])->name('service');
-
 Route::post('/ServiceDelete',[ServiceController::class,'ServiceDelete'])->name('service');
+Route::post('/ServiceDetails',[ServiceController::class,'ServiceDetails'])->name('service');
+Route::post('/ServiceUpdate',[ServiceController::class,'ServiceUpdate'])->name('service');
+Route::post('/ServiceAdd',[ServiceController::class,'ServiceAdd'])->name('service');
+
+

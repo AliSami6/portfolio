@@ -24,12 +24,14 @@ class ServiceController extends Controller
         return $result; 
     }
 
-    /* public function ServiceDelete(){
-       // $result=json_encode(Service::orderBy('id','desc')->get());
-        return "text"; 
-    }
+   
+    public function ServiceDetails(Request $req){
+          $id= $req->input('id');
+          $result=json_encode(Service::where('id','=',$id)->get());
+          return $result;
+     }
 
-*/
+
 
 
     public function ServiceDelete(Request $req){
@@ -44,7 +46,34 @@ class ServiceController extends Controller
          }
     }
 
+    public function ServiceUpdate(Request $req){
+     $id= $req->input('id');
+     $name= $req->input('name');
+     $des= $req->input('des');
+     $img= $req->input('img');
+     $result= Service::where('id','=',$id)->update(['service_name'=>$name,'service_des'=>$des,'service_img'=>$img]);
 
+         if($result==true){      
+           return 1;
+         }
+         else{
+          return 0;
+         }
+    }
+
+    public function ServiceAdd(Request $req){
+        $name= $req->input('name');
+        $des= $req->input('des');
+        $img= $req->input('img');
+        $result= Service::insert(['service_name'=>$name,'service_des'=>$des,'service_img'=>$img]);
+
+        if($result==true){      
+           return 1;
+         }
+        else{
+          return 0;
+         }
+    }
     /**
      * Show the form for creating a new resource.
      *
