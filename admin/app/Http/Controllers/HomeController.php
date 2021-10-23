@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Home;
+use App\Models\Visitor;
+use App\Models\Service;
+use App\Models\Course;
+use App\Models\Project;
+use App\Models\Contact;
+use App\Models\Review;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +20,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-          return view('Home');
+        $TotalContact= Contact::count();
+        $TotalCourse=Course::count();
+        $TotalProject=Project::count();
+        $TotalReview=Review::count();
+        $TotalService=Service::count();
+        $TotalVisitor=Visitor::count();
+          return view('Home',[
+            'TotalContact'=>$TotalContact,
+            'TotalCourse'=>$TotalCourse,
+            'TotalProject' =>$TotalProject,
+            'TotalReview'=>$TotalReview,
+            'TotalService'=>$TotalService,
+            'TotalVisitor' =>$TotalVisitor
+        ]);
     }
 
     /**

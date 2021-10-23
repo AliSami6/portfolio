@@ -8,7 +8,7 @@
 
         <button id="addNewBtnId" class="btn my-3 btn-sm btn-danger">Add New </button>
 
-        <table id="" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <table id="serviceDataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
           <thead>
             <tr>
              
@@ -49,7 +49,7 @@
     <div class="modal-content">
       <div class="modal-body p-5 text-center">
         <h6 class="mt-4" >Do You want to delete?</h6>
-        <h5 id="serviceDeleteId" class="mt-4"></h5>
+        <h5 id="serviceDeleteId" class="mt-4 d-none"></h5>
        
       </div>
       <div class="modal-footer">
@@ -77,7 +77,7 @@
         </button>
       </div>
       <div class="modal-body p-4 text-center">
-          <h5 id="serviceEditId" class="mt-4 "> </h5>
+          <h5 id="serviceEditId" class="mt-4 d-none"> </h5>
           <div id="serviceEditForm" class="d-none w-100">
          
               <input id="serviceNameID" type="text" id="" class="form-control mb-4"
@@ -137,16 +137,17 @@
 // For Services Table
 
 function getServiceData() {
-    axios.post('/getServiceData')
+    axios.get('/getServiceData')
         .then(function(response) {
             if (response.status == 200) {
 
                 $('#mainDiv').removeClass('d-none');
                 $('#loaderDiv').addClass('d-none');
+                $('#serviceDataTable').DataTable().destroy();
 
                 $('#servicetable').empty();
+
                 var dataJSON = response.data;
-                console.log(dataJSON)
                 $.each(dataJSON, function(i, item) {
                     $('<tr>').html(
                         "<td>" + dataJSON[i].service_name + "</td>" +
@@ -174,6 +175,9 @@ function getServiceData() {
 
                 })
 
+                $('#serviceDataTable').DataTable({"order":false});
+                $('.dataTables_length').addClass('bs-select');
+               
               
 
             } else {

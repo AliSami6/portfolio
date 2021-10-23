@@ -20,7 +20,7 @@ class ServiceController extends Controller
 
 
     public function getServiceData(){
-        $result=json_encode(Service::all());
+        $result=json_encode(Service::orderBy('id','desc')->get());
         return $result; 
     }
 

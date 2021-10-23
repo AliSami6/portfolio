@@ -1,0 +1,239 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dat",
+				"dataJSON"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"ret\treturn"
+			],
+			[
+				"Vi",
+				"Visitor"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Http/Controllers/ReviewController.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Review.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/public/js/custom.js",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Layout/menu.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Courses.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Contact.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Http/Controllers/ContactController.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Http/Controllers/CourseController.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Models/Review.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/database/migrations/2021_10_02_022257_create_reviews_table.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Http/Controllers/ProjectController.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Project.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Models/Contact.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Http/Controllers/ServiceController.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Service.blade.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/database/migrations/2021_10_01_051325_create_projects_table.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Models/Project.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Models/Service.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/app/Models/Course.php",
+		"/C/xampp/htdocs/portfolio/portfolio/admin/resources/views/Visitor.blade.php",
+		"/C/xampp/htdocs/portfolio/profile/admin/app/Http/Controllers/ServiceController.php",
+		"/C/xampp/htdocs/portfolio/profile/admin/routes/web.php",
+		"/C/xampp/htdocs/portfolio/profile/admin/public/js/custom.js",
+		"/C/xampp/htdocs/portfolio/profile/admin/resources/views/Service.blade.php",
+		"/C/xampp/htdocs/portfolio/admin/resources/views/Layout/app.blade.php",
+		"/C/xampp/htdocs/portfolio/admin/public/js/custom.js",
+		"/C/xampp/htdocs/portfolio/admin/routes/web.php",
+		"/C/xampp/htdocs/portfolio/admin/resources/views/Service.blade.php",
+		"/C/xampp/htdocs/portfolio/admin/resources/views/Layout/menu.blade.php",
+		"/C/xampp/htdocs/portfolio/admin/app/Http/Controllers/VisitorController.php",
+		"/C/xampp/htdocs/portfolio/admin/app/Models/Service.php",
+		"/C/xampp/htdocs/portfolio/admin/resources/views/Visitor.blade.php",
+		"/C/xampp/htdocs/portfolio/admin/app/Models/Visitor.php",
+		"/C/xampp/htdocs/portfolio/admin/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/portfolio/admin/resources/views/Home.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/resources/views/Layout/menu.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/resources/views/Visitor.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/app/Http/Controllers/VisitorController.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/app/Http/Controllers/HomeController.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/resources/views/Layout/app.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/routes/web.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/resources/views/Home.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/resources/views/Visitors.blade.php",
+		"/E/xampp/htdocs/Laravel-Portfolio-Website/admin/.env",
+		"/C/xampp/htdocs/www.batch42.com/admin/buttons.html",
+		"/F/javaScript/4. BASIC TEMPLATE/footer.html",
+		"/F/hello-academy-blog/index.html",
+		"/E/javaScript/1. LESSON/javaScript_practise.html.html",
+		"/C/Program Files/Git/ReleaseNotes.html",
+		"/E/intern/index.html",
+		"/E/nirjhor_Sir/MyResume/index.html",
+		"/E/Azizul Final Intern Responsive/28.12.16/azizul.html",
+		"/E/intern1.1/index.html",
+		"/E/WEb2.1.file/index.html",
+		"/G/MyResume/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "2021_10_02_151719_create_admins_table.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

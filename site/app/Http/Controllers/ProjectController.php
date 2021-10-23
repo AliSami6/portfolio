@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
-class CourseController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function CoursePage()
+    public function ProjectPage()
     {
-        $CoursesData= json_decode(Course::orderBy('id','desc')->get());
-        return view('Course',['CoursesData'=>$CoursesData]);
-      
+        $ProjectData=json_decode(Project::orderBy('id','desc')->get());
+        return view('projects',['ProjectData'=>$ProjectData]);
     }
 
     /**
@@ -43,10 +42,10 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Course $course)
+    public function show(Project $project)
     {
         //
     }
@@ -54,10 +53,10 @@ class CourseController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Course $course)
+    public function edit(Project $project)
     {
         //
     }
@@ -66,10 +65,10 @@ class CourseController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, Project $project)
     {
         //
     }
@@ -77,10 +76,10 @@ class CourseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Course $course)
+    public function destroy(Project $project)
     {
         //
     }
